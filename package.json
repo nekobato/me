@@ -9,6 +9,7 @@
   "author": "nekobato",
   "license": "BSD-2-Clause",
   "dependencies": {
-    "request": "~2.30.0"
+    "request": "~2.30.0",
+    "twitter": "~0.2.5"
   }
 }
