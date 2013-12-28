@@ -1,0 +1,19 @@
+#!/usr/bin/env node
+
+if (process.argv[2] === 'tweet') {
+  
+  var time = Math.floor( Math.random() * 1000 * 86400 );
+  var zogon = require('../lib/zogon.js');
+  setTimeout('zogon.say()', time);
+
+} else if (process.argv[2] === 'github') {
+
+  try {
+    var git = require('../lib/github.js');
+    git.check();
+  } catch(e) {
+    console.log(e);
+  }
+  
+
+}
